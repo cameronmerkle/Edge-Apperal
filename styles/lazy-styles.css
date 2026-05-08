@@ -1,1 +1,51 @@
-/* add global styles that can be loaded post LCP here */
+/* OBJET XIII — Post-LCP global styles */
+
+/* Selection */
+::selection {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Label / eyebrow utility for authored content */
+main .section strong {
+  letter-spacing: 0.01em;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mono-font-family);
+  font-size: var(--body-font-size-xs);
+}
+
+table th {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-color);
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+table td {
+  padding: 12px 14px;
+  border-bottom: 1px dotted var(--rule-color);
+  letter-spacing: 0.02em;
+}
+
+table tr:last-child td {
+  border-bottom: 1px solid var(--rule-color);
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
